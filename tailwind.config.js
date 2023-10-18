@@ -11,7 +11,7 @@ export default {
         yantraman : "'Yantramanav', 'sans-serif'"
       },
       backgroundImage : {
-        'backgroudBanner' : "url('https://i.ibb.co/cChTHPL/Pngtree-web-development-banner-enhances-creative-5592245.jpg')" ,
+        'backgroudBanner' : "url('https://i.ibb.co/XWgj2kt/banner.jpg')" ,
         'footerBackgroud' : "url('https://i.ibb.co/zSq7m96/footer-shape2.png')"
 
         

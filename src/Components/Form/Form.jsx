@@ -24,16 +24,12 @@ const Form = () => {
     }
     return (
         <div className="w-full my-10">
-      <div className="bg-gradient-to-t to-pink-400 from-rose-700 w-full md:w-9/12 mx-auto p-8 md:p-20 md:mt-20">
+      <div className="bg-gradient-to-t to-teal-600 rounded-lg shadow-xl from-gray-800 w-full md:w-9/12 mx-auto p-8 md:p-20 md:mt-20">
         <div className="text-center">
           <h1 className="font-philospar drop-shadow-lg  font-bold text-4xl mb-3">
             Add Anyother Item
           </h1>
-          <p className=" font-yantraman font-light text-lg ">
-            It is a long established fact that a reader will be distraceted by
-            the readable <br /> content of a page when looking at its layout. The point{" "}
-            
-          </p>
+           
         </div>
 
         <form onSubmit={handleForm}>
@@ -42,7 +38,7 @@ const Form = () => {
               <label className="font-philospar text-white" htmlFor="">
                 Name
                 <input
-                  className="w-full outline-none b-white px-3 py-2 mt-2 rounded"
+                  className="w-full text-black outline-none  px-3 py-2 mt-2 rounded"
                   type="text"
                   name="name"
                   id=""
@@ -53,7 +49,7 @@ const Form = () => {
               <label className="font-philospar text-white" htmlFor="">
                 Brand Name
                 <input
-                  className="w-full mt-2 outline-none b-white px-3 py-2 rounded"
+                  className="w-full text-black mt-2 outline-none b-white px-3 py-2 rounded"
                   type="text"
                   name="brand"
                   id=""
@@ -66,7 +62,7 @@ const Form = () => {
               <label className="font-philospar text-white" htmlFor="">
                 Price
                 <input
-                  className="w-full outline-none b-white px-3 py-2 mt-2 rounded"
+                  className="w-full text-black outline-none b-white px-3 py-2 mt-2 rounded"
                   type="text"
                   name="price"
                   id=""
@@ -77,7 +73,7 @@ const Form = () => {
               <label className="font-philospar text-white" htmlFor="">
                 Description
                 <input
-                  className="w-full mt-2 outline-none b-white px-3 py-2 rounded"
+                  className="w-full text-black mt-2 outline-none b-white px-3 py-2 rounded"
                   type="text"
                   name="description"
                   id=""
@@ -90,7 +86,7 @@ const Form = () => {
               <label className="font-philospar text-white" htmlFor="">
                  Rating
                 <input
-                  className="w-full outline-none b-white px-3 py-2 mt-2 rounded"
+                  className="w-full text-black outline-none b-white px-3 py-2 mt-2 rounded"
                   type="text"
                   name="rating"
                   id=""
@@ -100,7 +96,7 @@ const Form = () => {
             <div className='md:w-1/2'>
             <label className="font-philospar text-white" htmlFor="">
                  Type
-                 <select className="w-full outline-none b-white px-3 py-2 mt-2 rounded" name="select" id="">
+                 <select className="w-full text-black outline-none b-white px-3 py-2 mt-2 rounded" name="select" id="">
                 <option value="macbook">Macbook</option>
                 <option value="samsung">Samsung</option>
                 <option value="hp">Hp</option>
@@ -116,14 +112,14 @@ const Form = () => {
             <label className="font-philospar text-white" htmlFor="">
               Photo
               <input
-                className="w-full mt-2 outline-none b-white px-3 py-2 rounded"
+                className="w-full text-black mt-2 outline-none b-white px-3 py-2 rounded"
                 type="url"
                 name="photo"
                 id=""
               />
             </label>
           </div>
-          <button className="w-full bg-sky-500 font-philospar mt-5 py-2 text-lg rounded">
+          <button className="w-full text-black bg-sky-500 font-philospar mt-5 py-2 text-lg rounded">
             Add Card
           </button>
         </form>
