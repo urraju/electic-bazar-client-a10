@@ -7,18 +7,15 @@ const HomeCard = ({ cardData }) => {
   return (
     <div className="">
       <NavLink to={`/brandcard/${name}`}>
-        <div className="p-5 shadow-xl rounded-xl h-72 flex   ">
+        <div className="p-4 border rounded-xl border-sky-500 ">
           <div className="">
             <img className="w-full mx-auto " src={img} alt="" />
             <div className="  font-philospar ml-6">
-              <p className="capitalize">
-                <span className="text-lg font-bold">Name : </span>
+              <p className="capitalize text-2xl text-center text-gray-400">
+                
                 {name}
               </p>
-              <p className="capitalize">
-                <span className="text-lg font-bold">Brand Name : </span>
-                {brand_name}
-              </p>
+               
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const DetailsCard = () => {
                 <p className='text-gray-300 capitalize'><span className='text-sky-500 text-lg font-philospar'>Price : </span>{price}</p>
                 <p className='text-rose-500 capitalize'><span className='text-sky-500 text-lg font-philospar'>Rating : </span>{rating}</p>
                <div className='w-full flex items-center justify-center '>
-               <Link><button className='text-white mt-2 bg-gradient-to-t font-philospar border-b  border-gray-700 rounded  px-6 py-2'>Add To Card</button></Link>
+               <Link><button onClick={() => addtoCard(detailsData)} className='text-white mt-2 bg-gradient-to-t font-philospar border-b  border-gray-700 rounded  px-6 py-2'>Add To Card</button></Link>
                </div>
             </div>
            </div>
