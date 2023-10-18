@@ -1,0 +1,47 @@
+
+ 
+ [
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/6byDNVQ/samsung-logo-2.webp",
+      "name": "samsung",
+      "brand_name": "samsung",
+      "price": 19.99
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/Pg47DBQ/logo-mac.jpg",
+      "name": "macbook Pro",
+      "brand_name": "macbook",
+      "price": 29.99
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/6Fr2LYc/lenovo-logo.webp",
+      "name": "lenovo",
+      "brand_name": "lenovo",
+      "price": 39.99
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/ykhbsmY/hp-logo.webp",
+      "name": "hp",
+      "brand_name": "hP",
+      "price": 49.99
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/B6mwzjH/asus-logo.webp",
+      "name": "asus pro",
+      "brand_name": "asus",
+      "price": 59.99
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/VD03nPY/acer-logo.webp",
+      "name": "acer",
+      "brand_name": "acer",
+      "price": 69.99
+    }
+  ]
+ 
