@@ -8,11 +8,11 @@ const Form = () => {
         const name = form.name.value;
         const brand = form.brand.value;
         const price = form.price.value;
-        const select = form.select.value;
+        const type = form.type.value;
         const description = form.description.value;
         const rating = form.rating.value;
         const photo = form.photo.value;
-        const info = {name, brand, price,select, description,rating,photo}
+        const info = {name, brand, price,type, description,rating,photo}
         console.log(info);
 
         fetch('http://localhost:3017/laptop',{
@@ -96,13 +96,16 @@ const Form = () => {
             <div className='md:w-1/2'>
             <label className="font-philospar text-white" htmlFor="">
                  Type
-                 <select className="w-full text-black outline-none b-white px-3 py-2 mt-2 rounded" name="select" id="">
-                <option value="macbook">Macbook</option>
-                <option value="samsung">Samsung</option>
-                <option value="hp">Hp</option>
-                <option value="asus">Asus</option>
-                <option value="acer">Acer</option>
-                <option value="lenovo">Lenovo</option>
+                 <select className="w-full text-black outline-none b-white px-3 py-2 mt-2 rounded" name="type" id="">
+                 <option value="select">Select</option>
+                <option value="laptop">Laptop</option>
+                <option value="watch">Watch</option>
+                <option value="mouse">Mouse</option>
+                <option value="eyarphone">Eyarphone</option>
+                <option value="mobile">Mobile</option>
+                <option value="keyaboard">keyaboard</option>
+                <option value="bluetooth">Bluetooth</option>
+                <option value="monitor">Monitor</option>
               </select>
               </label>
               

@@ -4,7 +4,7 @@ import logo from "../../assets/logo2.png";
 import useAuth from "../MangeAuth/useAuth";
 import useIcon from "../../assets/user.png";
 const Navbar = () => {
-  const { user, loading ,logout } = useAuth();
+  const { user, logout } = useAuth();
   const handleLogOut = () => {
     logout().then().catch();
   };
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full px-6 md:px-0">
-      <div className=" md:w-9/12 lg:w-9/12 mx-auto rounded-full mt-6  backdrop-blur bg-white/10 px-3">
+      <div className=" md:w-9/12 lg:w-9/12 mx-auto rounded-full mt-6   bg-black px-3">
         <div className="navbar ">
           <div className="navbar-start">
             <div className="dropdown">
@@ -71,12 +71,12 @@ const Navbar = () => {
             </div>
             <NavLink to="/" className="  ">
               <div className="flex items-center">
-                <img
-                  className="w-24 "
+                <img 
+                  className="w-24 hidden lg:block md:block "
                   src={logo}
                   alt=""
                 />
-                <p className="text-2xl hidden lg:block md:block first-letter:text-5xl first-letter:text-sky-400 font-philospar font-bold font-bebas text-white">
+                <p className=" md:text-2xl  lg:block md:block  md:first-letter:text-5xl first-letter:text-sky-400 font-philospar font-bold font-bebas text-white">
                   Laptop Bazar
                 </p>
               </div>
@@ -107,13 +107,13 @@ const Navbar = () => {
             {user ? (
               <button
                 onClick={handleLogOut}
-                className="text-white font-philospar uppercase bg-sky-500 px-5 rounded py-[3px]"
+                className="text-white font-philospar uppercase bg-sky-500 text-[12px] px-5 rounded py-[3px]"
               >
                 Sing out
               </button>
             ) : (
               <Link to="/login">
-                <button className="text-white uppercase font-philospar bg-sky-500 px-5 rounded py-[3px]">
+                <button className="text-white uppercase font-philospar bg-sky-500 md:px-5 rounded py-[3px]">
                   Login
                 </button>
               </Link>

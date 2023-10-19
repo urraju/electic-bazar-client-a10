@@ -11,8 +11,8 @@
     {
       "id": 2,
       "img": "https://i.ibb.co/j6w6BcX/dell-logo.webp",
-      "name": "macbook Pro",
-      "brand_name": "macbook",
+      "name": "dell",
+      "brand_name": "dell",
       "price": 29.99
     },
     {
@@ -26,7 +26,7 @@
       "id": 4,
       "img": "https://i.ibb.co/ykhbsmY/hp-logo.webp",
       "name": "hp",
-      "brand_name": "hP",
+      "brand_name": "hp",
       "price": 49.99
     },
     {

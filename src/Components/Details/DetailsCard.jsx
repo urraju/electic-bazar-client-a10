@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 const DetailsCard = () => {
   const detailsData = useLoaderData();
-  const { name, brand, price, select, description, rating, photo } =
+  const { name, brand, price, type, description, rating, photo } =
     detailsData;
   const handleAdd = () => {
     fetch("http://localhost:3017/addlaptop", {
@@ -22,7 +22,6 @@ const DetailsCard = () => {
             icon: "success",
             confirmButtonText: "Done",
           });
-           
         }
       });
   };
@@ -50,9 +49,9 @@ const DetailsCard = () => {
           </p>
           <p className="text-gray-300 capitalize">
             <span className="text-sky-500 text-lg font-philospar">
-              Select :{" "}
+              Type :{" "}
             </span>
-            {select}
+            {type}
           </p>
           <p className="text-gray-300 capitalize">
             <span className="text-sky-500 text-lg font-philospar">
@@ -67,7 +66,7 @@ const DetailsCard = () => {
             {rating}
           </p>
           <div className="w-full flex items-center justify-center ">
-            <Link >
+            <Link>
               <button
                 onClick={handleAdd}
                 className="text-white mt-2 bg-gradient-to-t font-philospar border-b  border-gray-700 rounded  px-6 py-2"

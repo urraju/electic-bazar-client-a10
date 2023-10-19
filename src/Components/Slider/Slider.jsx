@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 const Slider = ({ filter }) => {
   const [images , setImages] = useState([])
-  const {photo} = filter
-  // console.log(filter);
+   
   filter.map(photo => images.push(photo.photo))
   console.log(images);
   return (

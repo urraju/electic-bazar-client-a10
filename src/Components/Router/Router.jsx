@@ -42,7 +42,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/brandcard/:name",
+        path: "/brandcard/:brand_name",
         element: <BrandCard />,
         loader: () => fetch("http://localhost:3017/laptop"),
       },
