@@ -1,12 +1,17 @@
 
 import React from 'react'
-import Form from '../Form/Form'
-import Login from '../Login/Login'
+import { useLoaderData } from 'react-router-dom'
 
 const MyCard = () => {
+    const data = useLoaderData()
+    console.log(data);
+    const {name, brand, price,select, description,rating,photo} = data;
     return (
         <div>
-           <Login />
+           <div>
+                <img src={photo} alt="" />
+                <p>{price}</p>
+           </div>
         </div>
     )
 }

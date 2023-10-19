@@ -29,7 +29,9 @@ const router = createBrowserRouter([
           <PrivateRout>
             <MyCard />,
           </PrivateRout>
+          
         ),
+        loader : () => fetch('http://localhost:3017/addlaptop')
       },
       {
         path: "/addproduct",

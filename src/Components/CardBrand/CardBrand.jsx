@@ -7,7 +7,7 @@ const CardBrand = ({brandCard}) => {
     return (
         <div>
        
-
+           
            <div className='border p-7 font-philospar'>
            <img src={photo} alt="" />
            <p className='capitalize text-gray-500'><span className='text-lg text-sky-950 font-semibold'>Name : </span>{name}</p>
