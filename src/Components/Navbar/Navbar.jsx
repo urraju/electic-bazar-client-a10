@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import useAuth from "../MangeAuth/useAuth";
 import useIcon from "../../assets/user.png";
+import DarkModeToggle from "../Theme/Theme";
 const Navbar = () => {
   const { user, logout } = useAuth();
   const handleLogOut = () => {
@@ -118,9 +119,11 @@ const Navbar = () => {
                 </button>
               </Link>
             )}
+             
           </div>
         </div>
       </div>
+    
     </div>
   );
 };
