@@ -7,7 +7,7 @@ const HomeCard = ({ cardData }) => {
   return (
     <div className="">
       <NavLink to={`/brandcard/${brand_name}`}>
-        <div className="p-4 border rounded-xl border-sky-500 ">
+        <div className="p-4 bg-gradient-to-t shadow-xl to-gray from-blue-200 rounded-xl border-sky-500 ">
           <div className="">
             <img className="w-full mx-auto " src={img} alt="" />
             <div className="  font-philospar ml-6">

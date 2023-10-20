@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Swal from 'sweetalert2';
 
 const Form = () => {
     const handleForm = (e) => {
@@ -20,6 +21,19 @@ const Form = () => {
             headers : {'content-type' : 'application/json'},
             body : JSON.stringify(info)
         })
+        .then(res => res.json())
+    .then(data =>  {
+      console.log(data);
+      if(data.insertedId){
+        Swal.fire({
+          title: 'Successfull!',
+          text: 'Added Successfully',
+          icon: 'success',
+          confirmButtonText: 'Done'
+        })
+        form.reset()
+      }
+    })
 
     }
     return (

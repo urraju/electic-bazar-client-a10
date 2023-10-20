@@ -12,11 +12,14 @@ import Login from "../Login/Login";
 import PrivateRout from "../Private/PrivateRout";
 import UpdateData from "../UpdateData/UpdateData";
 import DetailsCard from "../Details/DetailsCard";
+import Samble from "../SambleProduct/Samble";
+import Error from "../Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement : <Error />,
     children: [
       {
         path: "/",
@@ -40,6 +43,11 @@ const router = createBrowserRouter([
             <AddProduct />
           </PrivateRout>
         ),
+      },
+      {
+        path : '/samble',
+        element : <Samble />,
+        loader : () => fetch("http://localhost:3017/laptop")
       },
       {
         path: "/brandcard/:brand_name",
@@ -82,6 +90,8 @@ const router = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`http://localhost:3017/laptop/${params.id}`),
       },
+
+     
     ],
   },
 ]);

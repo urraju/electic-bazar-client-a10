@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import Footer from "../Footer/Footer";
 
 const DetailsCard = () => {
   const detailsData = useLoaderData();
@@ -26,7 +27,7 @@ const DetailsCard = () => {
       });
   };
   return (
-    <div className="w-full">
+    <div className="w-full my-5">
       <div className="md:w-9/12 mx-auto p-3">
         <div className="bg-gradient-to-t p-8 rounded-xl to-violet-800 from-black">
           <img className="lg:w-7/12 mx-auto" src={photo} alt="" />
@@ -77,6 +78,7 @@ const DetailsCard = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo2.png";
+import logo from "../../assets/logo.png";
 import useAuth from "../MangeAuth/useAuth";
 import useIcon from "../../assets/user.png";
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
       <NavLink
         className={({ isActive, isLoading }) =>
-          isLoading ? "loading" : isActive ? "text-cyan-600 underline" : ""
+          isLoading ? "loading" : isActive ? "text-sky-500 underline" : ""
         }
         to="/"
       >
@@ -20,7 +20,7 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         className={({ isActive, isLoading }) =>
-          isLoading ? "isloading" : isActive ? "text-cyan-600 underline" : ""
+          isLoading ? "isloading" : isActive ? "text-sky-500 underline" : ""
         }
         to="/mycard"
       >
@@ -28,7 +28,7 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         className={({ isActive, isLoading }) =>
-          isLoading ? "isloading" : isActive ? "text-cyan-600 underline" : ""
+          isLoading ? "isloading" : isActive ? "text-sky-500 underline" : ""
         }
         to="/addproduct"
       >
@@ -77,7 +77,7 @@ const Navbar = () => {
                   alt=""
                 />
                 <p className=" md:text-2xl  lg:block md:block  md:first-letter:text-5xl first-letter:text-sky-400 font-philospar font-bold font-bebas text-white">
-                  Laptop Bazar
+                  Electic Bz
                 </p>
               </div>
             </NavLink>
@@ -107,13 +107,13 @@ const Navbar = () => {
             {user ? (
               <button
                 onClick={handleLogOut}
-                className="text-white font-philospar uppercase bg-sky-500 text-[12px] px-5 rounded py-[3px]"
+                className="text-white font-philospar uppercase bg-sky-500 text-[12px] md:py-1 md:text-[16px] px-5  rounded py-[3px]"
               >
                 Sing out
               </button>
             ) : (
               <Link to="/login">
-                <button className="text-white uppercase font-philospar bg-sky-500 md:px-5 rounded py-[3px]">
+                <button className="text-white md:py-1 text-[13px] uppercase font-philospar bg-sky-500 px-5 md:text-[16px] rounded py-[3px]">
                   Login
                 </button>
               </Link>

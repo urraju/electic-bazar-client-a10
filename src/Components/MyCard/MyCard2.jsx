@@ -35,7 +35,7 @@ const MyCard2 = ({ data ,setDeleted,useData}) => {
 
   return (
     <div className="b">
-      <div className=" relative backdrop-blur bg-white/5 flex flex-col md:flex-row border items-center gap-10 rounded-xl p-5">
+      <div className=" relative backdrop-blur md:h-72 bg-white/5 flex flex-col md:flex-row border items-center gap-10 rounded-xl p-5">
        <div>
        <img className=" md:w-80" src={photo} alt="" />
        
