@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 const UpdateData = () => {
   const update = useLoaderData();
-  const { _id, name, brand, price, select, description, rating, photo } =
+  const { _id, name, brand, price, type, description, rating, photo } =
     update;
 
   const updateHandler = (event) => {
@@ -18,6 +18,7 @@ const UpdateData = () => {
     const rating = form.rating.value;
     const photo = form.photo.value;
     const info = { name, brand, price, type, description, rating, photo };
+    console.log(type);
     console.log(info);
 
     fetch(`https://assignmant-10-server.vercel.app/laptop/${_id}`, {
@@ -27,7 +28,7 @@ const UpdateData = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        
         if (data.modifiedCount > 0) {
           Swal.fire({
             title: "Successfull!",
