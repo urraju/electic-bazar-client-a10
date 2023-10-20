@@ -80,6 +80,7 @@ const Navbar = () => {
                 <p className=" md:text-2xl  lg:block md:block  md:first-letter:text-5xl first-letter:text-sky-400 font-philospar font-bold font-bebas text-white">
                   Electic Bz
                 </p>
+                
               </div>
             </NavLink>
           </div>
@@ -88,6 +89,7 @@ const Navbar = () => {
               {navbar}
             </ul>
           </div>
+        
           <div className="navbar-end flex gap-2 items-center">
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
