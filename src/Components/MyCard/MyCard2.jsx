@@ -16,7 +16,7 @@ const MyCard2 = ({ data ,setDeleted,useData}) => {
     })
     .then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3017/addlaptop/${_id}`, {
+        fetch(`https://assignmant-10-server.vercel.app/addlaptop/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

@@ -20,7 +20,7 @@ const UpdateData = () => {
     const info = { name, brand, price, type, description, rating, photo };
     console.log(info);
 
-    fetch(`http://localhost:3017/laptop/${_id}`, {
+    fetch(`https://assignmant-10-server.vercel.app/laptop/${_id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(info),

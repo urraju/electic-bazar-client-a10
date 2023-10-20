@@ -8,7 +8,7 @@ const DetailsCard = () => {
   const { name, brand, price, type, description, rating, photo } =
     detailsData;
   const handleAdd = () => {
-    fetch("http://localhost:3017/addlaptop", {
+    fetch("https://assignmant-10-server.vercel.app/addlaptop", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(detailsData),

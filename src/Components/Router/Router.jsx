@@ -34,7 +34,7 @@ const router = createBrowserRouter([
           </PrivateRout>
           
         ),
-        loader : () => fetch('http://localhost:3017/addlaptop')
+        loader : () => fetch('https://assignmant-10-server.vercel.app/addlaptop')
       },
       {
         path: "/addproduct",
@@ -47,12 +47,12 @@ const router = createBrowserRouter([
       {
         path : '/samble',
         element : <Samble />,
-        loader : () => fetch("http://localhost:3017/laptop")
+        
       },
       {
         path: "/brandcard/:brand_name",
         element: <BrandCard />,
-        loader: () => fetch("http://localhost:3017/laptop"),
+        loader: () => fetch("https://assignmant-10-server.vercel.app/laptop"),
       },
       {
         path: "/homecard",
@@ -78,7 +78,7 @@ const router = createBrowserRouter([
           </PrivateRout>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:3017/laptop/${params.id}`),
+          fetch(`https://assignmant-10-server.vercel.app/laptop/${params.id}`),
       },
       {
         path: "/detailscard/:id",
@@ -88,7 +88,7 @@ const router = createBrowserRouter([
           </PrivateRout>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:3017/laptop/${params.id}`),
+          fetch(`https://assignmant-10-server.vercel.app/laptop/${params.id}`),
       },
 
      

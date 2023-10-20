@@ -4,7 +4,7 @@ const Samble = () => {
   const [samble, setSamble] = useState([]);
   const [show , setShow] = useState(8)
   useEffect(() => {
-    fetch("http://localhost:3017/laptop")
+    fetch("https://assignmant-10-server.vercel.app/laptop")
       .then((res) => res.json())
       .then((data) => setSamble(data));
   }, []);

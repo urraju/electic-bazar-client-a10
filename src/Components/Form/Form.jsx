@@ -16,7 +16,7 @@ const Form = () => {
         const info = {name, brand, price,type, description,rating,photo}
         console.log(info);
 
-        fetch('http://localhost:3017/laptop',{
+        fetch('https://assignmant-10-server.vercel.app/laptop',{
             method : 'POST',
             headers : {'content-type' : 'application/json'},
             body : JSON.stringify(info)
