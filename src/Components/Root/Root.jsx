@@ -3,7 +3,6 @@ import React from 'react'
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import toast, { Toaster } from "react-hot-toast";
-import DarkMode from '../Dark/DarkMode';
 const Root = () => {
     return (
         <div>

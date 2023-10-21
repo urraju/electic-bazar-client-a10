@@ -57,7 +57,9 @@ const AuthContext = ({children}) => {
 
   }
 
-    return <AuthProvider.Provider value={infrom}>{children}</AuthProvider.Provider>
+    return <AuthProvider.Provider value={infrom}>
+        {children}
+        </AuthProvider.Provider>
 }
 
 export default AuthContext

@@ -1,6 +1,5 @@
 
 import React from 'react'
-import DarkMode from '../Dark/DarkMode'
 
 const Banner = () => {
     return (
@@ -13,7 +12,7 @@ const Banner = () => {
                 <h1 className='text-white first-letter:text-6xl first-letter:text-sky-500 font-semibold text-5xl'>You can intarest visit <br /> Our Electic Bazar</h1>
                 <p className='text-white font-light mt-4  tracking-widest'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt veniam corrupti exercitationem. <br /> Quae reprehenderit excepturi, natus repellendus temporibus perspiciatis recusandae.</p>
                 <button className='backdrop-blur bg-white/20 text-white px-5 py-2 mt-3   rounded'>Visit Now</button>
-                <DarkMode/>
+                 
             </div>
           </div>
         </div>
