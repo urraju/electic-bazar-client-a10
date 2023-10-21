@@ -10,12 +10,15 @@ const MyCard = () => {
   console.log(useData[0].name);
   console.log(useData);
   return (
-    <div className="h-sreen w-full  bg-black bg-gradient-to-t   from-violet-800">
-      <div>
-        <h1 className="text-white text-center font-philospar text-4xl first-letter:text-5xl first-letter:text-sky-500 py-6">
-          You want to Add more product
-        </h1>
+    <div className="h-sreen w-full  bg-black bg-gradient-to-t  from-violet-800">
+      <div className=" md:mt-36">
+        <>
+          {" "}
+          className="text-white text-center font-philospar text-4xl
+          first-letter:text-5xl first-letter:text-sky-500 md:block py-6"
+        </>
       </div>
+
       <div className="w-9/12 mx-auto mt-20 mb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {deleted.map((item) => (
