@@ -58,13 +58,17 @@ const DetailsCard = () => {
             <span className="text-sky-500 text-lg font-philospar">
               Price :{" "}
             </span>
-            {price}
+           ${price}
           </p>
-          <p className="text-rose-500 capitalize">
+          <p className="text-rose-500 capitalize flex items-center gap-2">
             <span className="text-sky-500 text-lg font-philospar">
               Rating :{" "}
             </span>
-            {rating}
+            {rating.length > 0 ? <div className='rating text-sm rating-sm'>
+            <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-500 " checked />
+            <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-500" checked />
+            <input type="radio" name="rating-4" className="mask mask-star-2 bg-orange-500" checked />
+            </div> : '0'}
           </p>
           <div className="w-full flex items-center justify-center ">
             <Link>

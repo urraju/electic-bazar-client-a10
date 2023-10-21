@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png";
 import useAuth from "../MangeAuth/useAuth";
 import useIcon from "../../assets/user.png";
 import DarkModeToggle from "../Theme/Theme";
+// import DarkModeToggle from "../Theme/Theme";
 const Navbar = () => {
   const { user, logout } = useAuth();
   const handleLogOut = () => {
@@ -65,9 +66,10 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-5 shadow backdrop-blur bg-white/30 w-52 rounded border border-gradient-to-tr  border-gray-300 font-normal uppercase font-roboto gap-5  text-white md:text-white lg:text-white "
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-5 shadow bg-gradient-to-t to-violet-700 from-black w-52 rounded border border-gradient-to-tr  border-gray-600 font-normal uppercase font-roboto gap-5  text-white md:text-white lg:text-white "
               >
                 {navbar}
+              
               </ul>
             </div>
             <NavLink to="/" className="  ">
@@ -106,7 +108,7 @@ const Navbar = () => {
                 <li>{user ? user.email : ""}</li>
               </ul>
             </div>
-
+           
             {user ? (
               <button
                 onClick={handleLogOut}
@@ -123,6 +125,7 @@ const Navbar = () => {
             )}
              
           </div>
+          {/* <DarkModeToggle/> */}
         </div>
       </div>
     

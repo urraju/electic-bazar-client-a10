@@ -18,15 +18,19 @@ const CardBrand = ({ brandCard }) => {
             </span>
             {brand}
           </p>
-          <p className="capitalize text-gray-500">
+          <p className="capitalize text-gray-500 flex items-center gap-2">
             <span className="text-lg text-sky-950 font-semibold">
               Rating :{" "}
             </span>
-            {rating}
+            {rating.length > 0 ? <div className='rating text-sm rating-sm'>
+            <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500 " checked />
+            <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" checked />
+            <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" checked />
+            </div> : '0'}
           </p>
           <p className="capitalize text-gray-500">
             <span className="text-lg text-sky-950 font-semibold">Price : </span>
-            {price}
+            ${price}
           </p>
           <div className="flex gap-3 mt-3">
             <Link to={`/detailsCard/${_id}`}>
