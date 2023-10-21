@@ -22,11 +22,30 @@ const CardBrand = ({ brandCard }) => {
             <span className="text-lg text-sky-950 font-semibold">
               Rating :{" "}
             </span>
-            {rating.length > 0 ? <div className='rating text-sm rating-sm'>
-            <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500 " checked />
-            <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" checked />
-            <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" checked />
-            </div> : '0'}
+            {rating.length > 0 ? (
+              <div className="rating text-sm rating-sm">
+                <input
+                  type="radio"
+                  name="rating-4"
+                  className="mask mask-star-2 bg-green-500 "
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  className="mask mask-star-2 bg-green-500"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-4"
+                  className="mask mask-star-2 bg-green-500"
+                  checked
+                />
+              </div>
+            ) : (
+              "0"
+            )}
           </p>
           <p className="capitalize text-gray-500">
             <span className="text-lg text-sky-950 font-semibold">Price : </span>

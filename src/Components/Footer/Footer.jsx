@@ -37,13 +37,13 @@ const Footer = () => {
         </nav>
         <nav>
           <header className="footer-title flex border-b ">Follow Us</header>
-        
+
           <div className="grid text-lg grid-flow-col gap-4">
-          <FaFacebook />
-          <FaInstagram />
-          <FaTwitter />
-          <FaLinkedin />
-          <FaYoutube />
+            <FaFacebook />
+            <FaInstagram />
+            <FaTwitter />
+            <FaLinkedin />
+            <FaYoutube />
           </div>
         </nav>
       </footer>

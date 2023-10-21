@@ -1,9 +1,8 @@
-
 import { FcGoogle } from "react-icons/fc";
 import { BsGithub } from "react-icons/bs";
 import useAuth from "../MangeAuth/useAuth";
 const SocialLogin = () => {
- const {google,github} = useAuth()
+  const { google, github } = useAuth();
   const handleButton = (google) => {
     google()
       .then((res) => console.log(res))

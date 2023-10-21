@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement : <Error />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -32,9 +32,9 @@ const router = createBrowserRouter([
           <PrivateRout>
             <MyCard />,
           </PrivateRout>
-          
         ),
-        loader : () => fetch('https://assignmant-10-server.vercel.app/addlaptop')
+        loader: () =>
+          fetch("https://assignmant-10-server.vercel.app/addlaptop"),
       },
       {
         path: "/addproduct",
@@ -45,9 +45,8 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path : '/samble',
-        element : <Samble />,
-        
+        path: "/samble",
+        element: <Samble />,
       },
       {
         path: "/brandcard/:brand_name",
@@ -90,8 +89,6 @@ const router = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`https://assignmant-10-server.vercel.app/laptop/${params.id}`),
       },
-
-     
     ],
   },
 ]);

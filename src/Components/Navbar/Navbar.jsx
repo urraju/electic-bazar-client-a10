@@ -3,7 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import useAuth from "../MangeAuth/useAuth";
 import useIcon from "../../assets/user.png";
- 
+import DarkMode from "../DarkMode/DarkMode";
+
 const Navbar = () => {
   const { user, logout } = useAuth();
   const handleLogOut = () => {
@@ -39,8 +40,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="w-full px-6 md:px-0">
-      <div className=" md:w-9/12 lg:w-9/12 mx-auto rounded-full mt-6   bg-black px-3">
+    <div className="w-full px-6 absolute top-0 z-30 md:px-0">
+      <div className=" w-full md:w-9/12 lg:w-9/12   mx-auto rounded-full mt-6   bg-black px-3">
         <div className="navbar ">
           <div className="navbar-start">
             <div className="dropdown">
@@ -68,12 +69,11 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-5 shadow bg-gradient-to-t to-violet-700 from-black w-52 rounded border border-gradient-to-tr  border-gray-600 font-normal uppercase font-roboto gap-5  text-white md:text-white lg:text-white "
               >
                 {navbar}
-              
               </ul>
             </div>
             <NavLink to="/" className="  ">
               <div className="flex items-center">
-                <img 
+                <img
                   className="w-24 hidden lg:block md:block "
                   src={logo}
                   alt=""
@@ -81,7 +81,6 @@ const Navbar = () => {
                 <p className=" md:text-2xl  lg:block md:block  md:first-letter:text-5xl first-letter:text-sky-400 font-philospar font-bold font-bebas text-white">
                   Electic Bz
                 </p>
-                
               </div>
             </NavLink>
           </div>
@@ -90,8 +89,11 @@ const Navbar = () => {
               {navbar}
             </ul>
           </div>
-        
+
           <div className="navbar-end flex gap-2 items-center">
+            <div>
+              <DarkMode />
+            </div>
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
@@ -107,11 +109,11 @@ const Navbar = () => {
                 <li>{user ? user.email : ""}</li>
               </ul>
             </div>
-           
+
             {user ? (
               <button
                 onClick={handleLogOut}
-                className="text-white font-philospar uppercase bg-sky-500 text-[12px] md:py-1 md:text-[16px] px-5  rounded py-[3px]"
+                className="text-white font-philospar uppercase bg-sky-500  text-[12px] md:py-1 md:text-[16px] px-4  rounded py-[3px]"
               >
                 Sing out
               </button>
@@ -122,12 +124,9 @@ const Navbar = () => {
                 </button>
               </Link>
             )}
-             
           </div>
-          
         </div>
       </div>
-    
     </div>
   );
 };

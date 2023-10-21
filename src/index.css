@@ -5,15 +5,4 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-     
-    background: white;
-    color: black;
-   
-    
-}
-[data-theme='dark'] {
-    background: rgba(0, 14, 20, 0.9);
-    color: white;
-    
-}
+ 

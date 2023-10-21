@@ -12,10 +12,12 @@ const HomeCard = ({ cardData }) => {
             <img className="w-full mx-auto " src={img} alt="" />
             <div className="  font-philospar ml-6">
               <p className="capitalize text-lg text-center text-gray-400">
-                
                 {brand_name}
               </p>
-              <button className="text-sm flex items-center gap-1  uppercase text-teal-700 font-light mx-auto w-full"> Click <BsArrowRight/> </button>
+              <button className="text-sm flex items-center gap-1  uppercase text-teal-700 font-light mx-auto w-full">
+                {" "}
+                Click <BsArrowRight />{" "}
+              </button>
             </div>
           </div>
         </div>

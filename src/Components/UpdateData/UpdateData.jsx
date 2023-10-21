@@ -4,8 +4,7 @@ import Swal from "sweetalert2";
 
 const UpdateData = () => {
   const update = useLoaderData();
-  const { _id, name, brand, price, type, description, rating, photo } =
-    update;
+  const { _id, name, brand, price, type, description, rating, photo } = update;
 
   const updateHandler = (event) => {
     event.preventDefault();
@@ -28,7 +27,6 @@ const UpdateData = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        
         if (data.modifiedCount > 0) {
           Swal.fire({
             title: "Successfull!",
@@ -42,16 +40,16 @@ const UpdateData = () => {
   };
 
   return (
-    <div className="w-full my-10">
+    <div className="w-full mt-28 md:mt-36">
       <div className="bg-gradient-to-r rounded-lg to-violet-800 from-black w-full md:w-9/12 mx-auto p-8 md:p-20 md:mt-20">
         <div className="text-center">
-          <h1 className="font-philospar drop-shadow-lg text-white  font-bold text-4xl mb-3">
+          <h1 className="font-philospar  drop-shadow-lg text-white  font-bold text-4xl mb-8">
             Update Your Card info
           </h1>
         </div>
 
         <form onSubmit={updateHandler}>
-          <div className="md:flex gap-7  mt-10 ">
+          <div className="md:flex gap-7  ">
             <div className="md:w-1/2">
               <label className="font-philospar text-white" htmlFor="">
                 Name
@@ -126,13 +124,13 @@ const UpdateData = () => {
                   id=""
                 >
                   <option value="laptop">Laptop</option>
-                <option value="watch">Watch</option>
-                <option value="mouse">Mouse</option>
-                <option value="eyarphone">Eyarphone</option>
-                <option value="mobile">Mobile</option>
-                <option value="keyaboard">keyaboard</option>
-                <option value="bluetooth">Bluetooth</option>
-                <option value="monitor">Monitor</option>
+                  <option value="watch">Watch</option>
+                  <option value="mouse">Mouse</option>
+                  <option value="eyarphone">Eyarphone</option>
+                  <option value="mobile">Mobile</option>
+                  <option value="keyaboard">keyaboard</option>
+                  <option value="bluetooth">Bluetooth</option>
+                  <option value="monitor">Monitor</option>
                 </select>
               </label>
             </div>
@@ -149,7 +147,10 @@ const UpdateData = () => {
               />
             </label>
           </div>
-          <button type="submit" className="w-full bg-sky-500 font-philospar mt-5 py-2 text-lg rounded">
+          <button
+            type="submit"
+            className="w-full bg-sky-500 font-philospar mt-5 py-2 text-lg rounded"
+          >
             Add Card
           </button>
         </form>

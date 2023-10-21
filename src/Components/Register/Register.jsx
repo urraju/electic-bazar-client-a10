@@ -4,7 +4,7 @@ import useAuth from "../MangeAuth/useAuth";
 import toast, { Toaster } from "react-hot-toast";
 
 const Register = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const { register, profile } = useAuth();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ const Register = () => {
 
     console.log(info);
     register(email, password)
-    .then((res) => {
+      .then((res) => {
         const user = res.user;
         profile({
           displayName: name,
@@ -36,20 +36,19 @@ const Register = () => {
         })
           .then((up) => {
             console.log("update profile");
-            form.reset()
+            form.reset();
           })
           .catch((err) => {
             console.log(err.message);
           });
         navigate("/");
-       
       })
-       
+
       .catch((error) => console.log(error));
   };
   return (
-    <div className="w-full p-4 mt-20">
-      <div className=" md:w-6/12 p-3 h-[550px] rounded flex items-center justify-center mx-auto bg-gradient-to-r  from-violet-700 to-violet-950">
+    <div className="w-full p-4 h-screen">
+      <div className=" md:w-6/12 p-3 mt-36 h-[550px] rounded flex items-center justify-center mx-auto bg-gradient-to-r  from-violet-700 to-violet-950">
         <form
           onSubmit={handleSubmit}
           className="w-96 rounded-lg p-10 backdrop-blur bg-white/10 font-philospar"
