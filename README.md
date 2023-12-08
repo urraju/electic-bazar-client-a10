@@ -1,5 +1,12 @@
- 
  ## Live Link : https://assignmant-10.web.app/
+
+ ###  Electic Bazar Service : 
+ - This site is an electronics market where one can buy all electronics products like laptop, mobile, watch, keyboard, mouse etc. There 
+  are special discounts on Black Friday.
+### Tecnologises :
+ - Tailwind, React, React Router, DiasyUi, Firebase, MongoDB, ExpressJS, NodeJS,AOS.
+
+## Features :
 
  - ### 1. Develop a feature that allows users to select products from different brands (e.g., Apple, Samsung, Dell, HP, ASUS, Lenovo) and compare their specifications side by side. Users can assess key features, performance, price, and customer reviews to make informed purchasing decisions.
  - ### 2.Implement a virtual showroom with 3D models for each product category. Users can rotate, zoom in, and interact with high-quality 3D models of mobile phones, monitors, mice, watches with keyboards, and laptops. This feature provides a detailed, immersive experience for users.
